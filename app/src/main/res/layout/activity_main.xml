@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/label_km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edit_km"
+        android:layout_alignBottom="@+id/edit_km"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:text="Kilómetros:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edit_km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="Introduce los Kilómetros"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btn_a_millas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_km"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="A millas"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_a_km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_a_millas"
+        android:layout_alignBottom="@+id/btn_a_millas"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="A kilómetros"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/label_millas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edit_millas"
+        android:layout_alignBottom="@+id/edit_millas"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:text="Millas:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edit_millas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_a_millas"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="Introduce las Millas"
+        android:inputType="textPersonName" />
+
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_millas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="#6750A3"
+        android:text="Conversor de Km a Millas y Millas a Km"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/label_metros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titulo"
+        android:layout_marginStart="20dp"
+        android:text="Metros:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edit_metros"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_metros"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Introduce los metros "
+        android:inputType="numberDecimal" />
+
+
+    <Button
+        android:id="@+id/btn_a_pies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_metros"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="A pies"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_a_metros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_metros"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/btn_a_pies"
+        android:text="A metros"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/label_pies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_a_pies"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Pies"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edit_pies"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_pies"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Introduce los pies"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/titulo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_pies"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="#6750A3"
+        android:text="Conversor de metros a pies y de pies a metros"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
